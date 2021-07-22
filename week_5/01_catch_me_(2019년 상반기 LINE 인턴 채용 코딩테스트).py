@@ -46,4 +46,4 @@ def catch_me(cony_loc, brown_loc):
                 queue.append((new_position, new_time))
         time += 1
 
-print(catch_me(c, b))  # 5가 나와야 합니다!
+print(catch_me(c, b)) # 5 출력
