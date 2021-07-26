@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-//¿¡¶óÅä½ºÅ×³×½ºÀÇ Ã¼
+//ì—ë¼í† ìŠ¤í…Œë„¤ìŠ¤ì˜ ì²´ ì´ìš©
 int prime_list[10000];
 void find_prime_list_under_number(int number) {
-	for (int i = 2; i <= number; i++) {
+	for (int i = 2; i <= number; i++) { 
 		prime_list[i]=i;
 	}
 
 	for (int i = 2; i < sqrt(number); i++) {
-		if (prime_list[i] == 0) 
+		if (prime_list[i] == 0) //0ì´ë©´ ë„˜ê¸°ê³ 
 			continue;
-		for (int j = 2 * i; j <= number; j += i) //¹è¼öµéÀ» Á¦¿Ü
+		for (int j = 2 * i; j <= number; j += i) //í•´ë‹¹ ì†Œìˆ˜ë“¤ì˜ ë°°ìˆ˜ë“¤ì„ ì œì™¸
 			prime_list[j] = 0;
 	}
 }
