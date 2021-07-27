@@ -2,12 +2,12 @@
 #include <string>
 using namespace std;
 
-class Hello { //Å¬·¡½º
-private: //³»ºÎ¿¡¼­¸¸ »ç¿ë
+class Hello { //í´ë˜ìŠ¤
+private: //ë‚´ë¶€ì—ì„œë§Œ ì‚¬ìš©
 	string hello = "Hello Class";
-public: //³»ºÎ ¿ÜºÎ »ç¿ë°¡´É
+public: //ë‚´ë¶€ ì™¸ë¶€ ì‚¬ìš©ê°€ëŠ¥
 	Hello(string h) {
-		//±âº» »ı¼ºÀÚ ¼³Á¤
+		//ê¸°ë³¸ ìƒì„±ì ì„¤ì •
 		hello = h;
 	}
 	void show() {
@@ -16,7 +16,7 @@ public: //³»ºÎ ¿ÜºÎ »ç¿ë°¡´É
 };
 
 void main(void) {
-	//Hello a; //ÀÎ½ºÅÏ½º¸¦ »ç¿ëÇÒ½Ã Hello class Ãâ·Â
+	//Hello a; //ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì‚¬ìš©í• ì‹œ Hello class ì¶œë ¥
 	Hello a = Hello("hihi");
 	a.show();
-}
+} 
