@@ -3,13 +3,13 @@
 
 typedef struct {
 	int data;
-	struct Node* next; // ÀÌ ±¸Á¶Ã¼ ÀÚÃ¼¸¦ °¡¸®Å°´Â Æ÷ÀÎÅÍÀÌ¹Ç·Î structÀ¸·Î ¼±¾ð
+	struct Node* next; // ì´ êµ¬ì¡°ì²´ ìžì²´ë¥¼ ê°€ë¦¬í‚¤ëŠ” í¬ì¸í„°ì´ë¯€ë¡œ structìœ¼ë¡œ ì„ ì–¸
 } Node;
 
-Node* head; //³ëµå ¸Ó¸® ¼±¾ð
+Node* head; //ë…¸ë“œ ë¨¸ë¦¬ ì„ ì–¸
 
 void main(void) {
-	head = (Node*)malloc(sizeof(Node)); //Çìµå ¼±¾ð
+	head = (Node*)malloc(sizeof(Node)); //í—¤ë“œ ì„ ì–¸
 	Node* node1 = (Node*)malloc(sizeof(Node));
 	node1->data = 1;
 	Node* node2 = (Node*)malloc(sizeof(Node));
@@ -17,7 +17,7 @@ void main(void) {
 	Node* node3 = (Node*)malloc(sizeof(Node));
 	node3->data = 3;
 
-	head->next = node1; //³ëµå1¸¦ ¸Ó¸®·Î
+	head->next = node1; //ë…¸ë“œ1ë¥¼ ë¨¸ë¦¬ë¡œ
 	node1->next = node2;
 	node2->next = node3;
 	node3->next = NULL;
@@ -25,6 +25,6 @@ void main(void) {
 	Node* cur = head->next;
 	while (cur != NULL) {
 		printf("%d ", cur->data);
-		cur = cur->next; //ÇÑÄ­¾¿ ³Ñ¾î°£´Ù
+		cur = cur->next; //í•œì¹¸ì”© ë„˜ì–´ê°„ë‹¤
 	}
-}
+} 
